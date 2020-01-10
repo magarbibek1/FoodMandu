@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/slider1" />
+
+
+    <EditText
+        style="@style/RegisterTextFieldStyle"
+        android:hint="First Name"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/etfirstname"/>
+
+    <EditText
+        style="@style/RegisterTextFieldStyle"
+        android:hint="Last Name"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:id="@+id/etlastname"/>
+
+
+    <EditText
+        style="@style/RegisterTextFieldStyle"
+        android:hint="Contact Number"
+        android:drawableLeft="@drawable/ic_phone_in_talk_black_24dp"
+        android:id="@+id/etnumber"/>
+
+    <EditText
+        style="@style/RegisterTextFieldStyle"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:id="@+id/etemail"/>
+
+    <EditText
+        style="@style/RegisterTextFieldStyle"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:id="@+id/etpassword"/>
+
+    <EditText
+        style="@style/RegisterTextFieldStyle"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:id="@+id/etrepassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="#0C0901"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/button_round"
+        android:id="@+id/btnregister"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Back To Login"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#0C0901"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvback"/>
+
+
+</LinearLayout>

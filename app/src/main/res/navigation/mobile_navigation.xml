@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.bibek.foodmandu.ui.basket.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favoourites"
+        android:name="com.bibek.foodmandu.ui.bakeries.GalleryFragment"
+        android:label="My Favourites"
+        tools:layout="@layout/activity_login" />
+
+    <fragment
+        android:id="@+id/nav_basket"
+        android:name="com.bibek.foodmandu.ui.notification.SlideshowFragment"
+        android:label="My Basket"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.bibek.foodmandu.ui.send.ToolsFragment"
+        android:label="Order History"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.bibek.foodmandu.ui.home.ShareFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_share" />
+
+
+</navigation>
